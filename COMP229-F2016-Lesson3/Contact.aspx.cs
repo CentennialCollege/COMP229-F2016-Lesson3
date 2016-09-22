@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,6 +13,14 @@ namespace COMP229_F2016_Lesson3
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void SendButton_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("First Name: " + FirstNameTextBox.Text);
+            Debug.WriteLine("Last Name: " + LastNameTextBox.Text);
+            Debug.WriteLine("Email: " + EmailTextBox.Text);
+            Debug.WriteLine("Contact Number: " + ContactNumberTextBox.Text);
         }
     }
 }
